@@ -75,7 +75,7 @@ const Product = ({ name, price, description, img, remaining }) => {
         <div className="half">
           <h2>
             <span className="product--title__large">{nameFirst}</span>
-            {nameRest && (
+            {nameRest.length > 0 && (
               <span className="product--title__small">
                 {nameRest.join(" ")}
               </span>
